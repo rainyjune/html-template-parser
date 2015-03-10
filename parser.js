@@ -8,5 +8,10 @@ fs.readFile("./index.html", {encoding: 'utf8'}, function(err, data) {
 
 // The entry function of content parsing.
 function parseFileContents(contents) {
-  
+  console.log(removeIgnoreParts(contents));
+}
+
+function removeIgnoreParts(contents) {
+  var pattern = /<!--\s*ignore\s*-->[\s\S]*?<!--\s*\/ignore\s*-->/gi;
+  return contents.replace(pattern, '');
 }
