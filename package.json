@@ -1,0 +1,9 @@
+{
+  "name" : "HTML-template-parser",
+  "description" : "Parse HTML templates",
+  "keywords" : ["template"],
+  "author" : "rainyjune <rainyjune@live.cn>",
+  "repository" : {"type": "git", "url": "https://github.com/rainyjune/html-template-parser"},
+  "main" : "parser.js",
+  "version" : "0.0.1"
+}
