@@ -1,14 +1,13 @@
 {
-  "name" : "HTML-template-parser",
-  "description" : "Parse HTML templates",
-  "keywords" : ["gruntplugin"],
-  "author": {
-    "name": "rainyjune",
-    "email": "rainyjune@live.cn"
-  },
+  "name": "html-template-parser",
+  "description": "Parse HTML templates",
+  "keywords": [
+    "gruntplugin"
+  ],
+  "author": "rainyjune <rainyjune@live.cn>",
   "homepage": "https://github.com/rainyjune/html-template-parser",
-  "repository" : {
-    "type": "git", 
+  "repository": {
+    "type": "git",
     "url": "https://github.com/rainyjune/html-template-parser.git"
   },
   "bugs": {
@@ -17,7 +16,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Kang/test/blob/master/LICENSE-MIT"
+      "url": "http://opensource.org/licenses/MIT"
     }
   ],
   "devDependencies": {
@@ -29,6 +28,13 @@
   "peerDependencies": {
     "grunt": "~0.4.5"
   },
-  "main" : "parser.js",
-  "version" : "0.0.1"
+  "main": "Gruntfile.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }
