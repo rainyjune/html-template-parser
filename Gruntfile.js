@@ -1,6 +1,6 @@
 /*
  * html-template-parser
- * https://github.com/rainyjune/html-template-parser
+ * https://github.com/rainyjune/htmlTemplateParser
  *
  * Copyright (c) 2015 rainyjune
  * Licensed under the MIT license.

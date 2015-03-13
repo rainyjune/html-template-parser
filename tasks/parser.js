@@ -109,7 +109,7 @@ module.exports = function(grunt) {
     return '';
   }
   
-  grunt.registerTask('htmlTemplateParser', 'This is the html-template-parser task.', function(){
+  grunt.registerTask('htmltemplateparser', 'This is the html-template-parser task.', function(){
     console.log("Run the task...");
     entry();
   });
