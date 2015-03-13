@@ -1,5 +1,6 @@
 {
   "name": "html-template-parser",
+  "version": "0.0.1",
   "description": "Parse HTML templates",
   "keywords": [
     "gruntplugin"
@@ -20,18 +21,17 @@
     }
   ],
   "devDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": ">= 0.4.2"
   },
   "engines": {
     "node": ">= 0.8.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": ">= 0.4.2"
   },
   "main": "Gruntfile.js",
-  "version": "0.0.1",
   "dependencies": {
-    "grunt": "^0.4.5"
+    "grunt": ">= 0.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
