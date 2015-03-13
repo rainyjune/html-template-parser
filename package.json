@@ -1,6 +1,6 @@
 {
   "name": "html-template-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parse HTML templates",
   "keywords": [
     "gruntplugin"

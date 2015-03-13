@@ -109,8 +109,6 @@ module.exports = function(grunt) {
     return '';
   }
   
-  // Actually load this plugin's task(s).
-  //grunt.loadTasks('tasks');
   grunt.registerTask('html-template-parser', 'This is the html-template-parser task.', function(){
     console.log("Run the task...");
     entry();
