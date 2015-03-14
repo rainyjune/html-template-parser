@@ -8,6 +8,8 @@
 
 'use strict';
 
+var path = require('path');
+
 module.exports = function(grunt) {
 
   var templateRegExpStr = "<!--\\s*template:(\\S+)\\s*-->([\\s\\S]*?)<!--\\s*\/template\\s*-->";
@@ -30,7 +32,7 @@ module.exports = function(grunt) {
   }
 
   function saveParsedTemplate(contents, file, destDir) {
-    grunt.file.write(destDir + file, contents);
+    grunt.file.write(destDir + path.basename(file), contents);
   }
 
   function insertTemplateTags(templateParsedResult) {
