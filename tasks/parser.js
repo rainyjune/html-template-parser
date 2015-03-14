@@ -15,22 +15,22 @@ module.exports = function(grunt) {
   var templateRegExpSingle = new RegExp(templateRegExpStr, "i");
 
   // Reads the entrie contents of a file.
-  function entry() {
-    var data = grunt.file.read("./index.html", {encoding: 'utf8'});
-    parseFileContents(data);
+  function entry(file, destDir) {
+    var data = grunt.file.read(file, {encoding: 'utf8'});
+    parseFileContents(data, file, destDir);
   }
 
   // The entry function of content parsing.
-  function parseFileContents(contents) {
+  function parseFileContents(contents, file, destDir) {
     contents = removeIgnoreParts(contents);
     contents = replacePlaceHolders(contents);
     var templateParsedResult = subtractTemplate(contents);
     contents = insertTemplateTags(templateParsedResult);
-    saveParsedTemplate(contents);
+    saveParsedTemplate(contents, file, destDir);
   }
 
-  function saveParsedTemplate(contents) {
-    grunt.file.write("index-tpl.html", contents);
+  function saveParsedTemplate(contents, file, destDir) {
+    grunt.file.write(destDir + file, contents);
   }
 
   function insertTemplateTags(templateParsedResult) {
@@ -110,7 +110,12 @@ module.exports = function(grunt) {
   }
   
   grunt.registerMultiTask('htmltemplateparser', 'This is the html-template-parser task.', function(){
-    console.log("Run the task...");
-    entry();
+    var target = this.target,
+        data = this.data;
+        
+    data.files.forEach(function(value){
+      entry(value, data.dest);
+    });
+    
   });
 };
