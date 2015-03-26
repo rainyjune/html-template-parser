@@ -16,7 +16,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfilie wit
 ##Run the task
 
 
-Run this task with the grunt htmltemplateparser command.
+Run this task with the `grunt htmltemplateparser` command.
 
 Task targets, files and options may be specified according to the grunt [http://gruntjs.com/configuring-tasks](Configuring tasks) guide.
 
