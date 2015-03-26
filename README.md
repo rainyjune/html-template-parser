@@ -20,3 +20,23 @@ Run this task with the grunt htmltemplateparser command.
 
 Task targets, files and options may be specified according to the grunt Configuring tasks guide.
 
+Usage Examples
+
+This configuration will be parse and generate a HTML file using the default options:
+
+
+// Project configuration. 
+grunt.initConfig({
+  uglify: {
+    my_target: {
+      files: [
+        {
+          expand: true,
+          src: ['templates/index.html'],
+          dest: './tpl/',
+          ext: '*.html'
+        }
+      ]
+    }
+  }
+});
