@@ -10,7 +10,7 @@ If you haven't used Grunt before, be sure to check out the Getting Started guide
 
 Once the plugin has been installed, it may be enabled inside your Gruntfilie with this line of JavaScript:
 
-grunt.loadNpmTasks('htmltemplateparser');
+>grunt.loadNpmTasks('htmltemplateparser');
 
 
 Run the task
@@ -24,7 +24,7 @@ Usage Examples
 
 This configuration will be parse and generate a HTML file using the default options:
 
-
+```
 // Project configuration. 
 grunt.initConfig({
   uglify: {
@@ -40,3 +40,4 @@ grunt.initConfig({
     }
   }
 });
+```
