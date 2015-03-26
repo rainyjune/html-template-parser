@@ -1,6 +1,6 @@
 # html-template-parser
 
-Getting Started
+##Getting Started
 
 This plugin requires Grunt >= 0.4.2
 
@@ -13,14 +13,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfilie wit
 >grunt.loadNpmTasks('htmltemplateparser');
 
 
-Run the task
+##Run the task
 
 
 Run this task with the grunt htmltemplateparser command.
 
 Task targets, files and options may be specified according to the grunt Configuring tasks guide.
 
-Usage Examples
+##Usage Examples
 
 This configuration will be parse and generate a HTML file using the default options:
 
